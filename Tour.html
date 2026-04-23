@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Behind the Microscope | MedTech Virtual Tour</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .lab-gradient { background: linear-gradient(105deg, #0f172a 0%, #1e3a8a 40%, #0d9488 100%); }
+        .microscope-card:hover { transform: translateY(-4px); transition: all 0.2s ease; }
+        .badge-glow { box-shadow: 0 0 0 2px #fff, 0 0 0 4px #0d9488; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- Navigation (consistent style, linked to tour) -->
+    <nav class="bg-white/90 backdrop-blur-md shadow-md sticky top-0 z-50 border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="text-teal-600">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 18h8"/><path d="M3 22h18"/><path d="M14 22a7 7 0 1 0 0-14h-1"/><path d="M9 14h2"/><path d="M9 12a2 2 0 0 1-2-2V6h6v4a2 2 0 0 1-2 2Z"/><path d="M12 6V3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3"/></svg>
+                </div>
+                <span class="text-xl font-bold tracking-tight text-slate-800">Behind the Microscope</span>
+            </div>
+            <div class="hidden md:flex space-x-8 font-medium">
+               <p><a href= "index.html">Back to Home</a></p>
+            
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with immersive lab intro -->
+    <header id="intro" class="lab-gradient text-white py-28 px-6 text-center relative overflow-hidden">
+        <div class="absolute inset-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1582719471384-894fbb16e074?auto=format&fit=crop&w=1600')] bg-cover bg-center mix-blend-overlay"></div>
+        <div class="max-w-4xl mx-auto relative z-10">
+            <div class="inline-block bg-white/20 backdrop-blur-sm rounded-full px-4 py-1 text-sm font-mono mb-4 border border-white/30">🔬 VIRTUAL TOUR • 2026 EDITION</div>
+            <h1 class="text-5xl md:text-6xl font-extrabold mb-6 tracking-tight">Behind the <span class="underline decoration-teal-300">Microscope</span></h1>
+            <p class="text-xl text-slate-100 mb-8 max-w-2xl mx-auto">“Please put on your lab coats, secure your goggles, and ensure your gloves are snug. Today, we step into the engine room of modern medicine.”</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#facilities" class="bg-white text-slate-800 px-8 py-3 rounded-full font-bold shadow-lg hover:bg-teal-50 transition">Begin the tour →</a>
+                <a href="#mythbusting" class="bg-transparent border-2 border-white px-8 py-3 rounded-full font-semibold hover:bg-white/10 transition">Myth busting hall</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Stop 1: What is a MedTech? -->
+    <section class="max-w-7xl mx-auto px-6 py-20 border-b border-slate-200">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="order-2 md:order-1">
+                <div class="inline-block bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-sm font-bold mb-4">STOP 1 • THE LOBBY</div>
+                <h2 class="text-4xl font-bold text-slate-800 mb-4">What is a <span class="text-teal-700">Medical Technologist?</span></h2>
+                <p class="text-lg text-slate-600 leading-relaxed mb-6">A Medical Technologist (MedTech), or Medical Laboratory Scientist, is the scientific detective of the healthcare world. They take <span class="bg-slate-100 italic px-1">“clues” (blood, urine, tissue, and other body fluids)</span> and process them to find out exactly what is happening inside a patient.</p>
+                <div class="bg-slate-100 p-5 rounded-2xl border-l-4 border-teal-600">
+                    <p class="font-semibold text-slate-700">📍 The Workplace:</p>
+                    <p class="text-slate-600">Clinical laboratories (inside hospitals like Cabrini), independent diagnostic centers, forensic labs, or pharmaceutical research facilities.</p>
+                    <p class="font-semibold text-slate-700 mt-3">⚙️ The Core Job:</p>
+                    <p class="text-slate-600">Performing complex chemical, biological, hematological, and molecular tests. If a doctor suspects leukemia, a MedTech counts the cells and identifies malignant ones under the microscope.</p>
+                </div>
+            </div>
+            <div class="order-1 md:order-2">
+                <img src="https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=800" alt="MedTech at microscope" class="rounded-2xl shadow-xl w-full object-cover h-80 md:h-96">
+            </div>
+        </div>
+    </section>
+
+    <!-- Stop 2: Hall of Myth-Busting -->
+    <section id="mythbusting" class="bg-white py-20 px-6 border-b border-slate-200">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12">
+                <div class="inline-block bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm font-bold mb-3">STOP 2 • HALL OF MYTH-BUSTING</div>
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-800">Clear the air. Let’s separate myth from reality.</h2>
+                <p class="text-slate-500 mt-2">Every profession has its rumors — here’s the truth.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-slate-50 rounded-2xl p-6 shadow-sm border border-slate-200">
+                    <div class="text-4xl mb-3">🧛‍♂️</div>
+                    <h3 class="font-bold text-xl text-red-700 mb-2">The Stereotype</h3>
+                    <p class="italic text-slate-600 mb-4">“They’re just professional vampires.”</p>
+                    <h3 class="font-bold text-xl text-teal-700 mb-2">✅ The Reality</h3>
+                    <p class="text-slate-600">Phlebotomy (drawing blood) is only about 5–10% of the job. The real work begins after the needle comes out, inside analyzers and under the microscope.</p>
+                </div>
+                <div class="bg-slate-50 rounded-2xl p-6 shadow-sm border border-slate-200">
+                    <div class="text-4xl mb-3">🤖</div>
+                    <h3 class="font-bold text-xl text-red-700 mb-2">The Stereotype</h3>
+                    <p class="italic text-slate-600 mb-4">“It’s just pushing buttons on machines.”</p>
+                    <h3 class="font-bold text-xl text-teal-700 mb-2">✅ The Reality</h3>
+                    <p class="text-slate-600">A machine gives a number; a MedTech gives a diagnosis. They troubleshoot errors, recognize “impossible” results, and correlate data with patient history.</p>
+                </div>
+                <div class="bg-slate-50 rounded-2xl p-6 shadow-sm border border-slate-200">
+                    <div class="text-4xl mb-3">📚</div>
+                    <h3 class="font-bold text-xl text-red-700 mb-2">The Stereotype</h3>
+                    <p class="italic text-slate-600 mb-4">“It’s a 'backup' course for Medicine.”</p>
+                    <h3 class="font-bold text-xl text-teal-700 mb-2">✅ The Reality</h3>
+                    <p class="text-slate-600">Elite pre-med track AND standalone high-stakes career. Many choose to stay because they prefer deep science over bedside politics.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stop 3: Gallery of History -->
+    <section id="history" class="py-20 px-6 max-w-7xl mx-auto border-b border-slate-200">
+        <div class="grid md:grid-cols-2 gap-12">
+            <div>
+                <div class="inline-block bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-bold mb-4">STOP 3 • GALLERY OF HISTORY</div>
+                <h2 class="text-3xl font-bold mb-5">From vintage lenses to modern precision</h2>
+                <div class="space-y-5 text-slate-600">
+                    <p><span class="font-bold text-slate-800">🌍 Global Roots:</span> Began in the late 19th century with simple chemical tests for urine. By World War I, blood typing and infection control turned it into a formal profession.</p>
+                    <p><span class="font-bold text-slate-800">🇵🇭 The Philippine Context:</span> We owe the local profession to the 26th Medical Laboratory of the US Army, which established the first clinical lab in the Philippines at Quiricada St., Sta. Cruz, Manila, in 1944.</p>
+                    <p><span class="font-bold text-slate-800">⚖️ Legal Foundation:</span> In 1969, <span class="bg-slate-100 px-1">Republic Act 5527 (The Philippine Medical Technology Act)</span> officially regulated the profession, setting the high standards we see today.</p>
+                </div>
+                <div class="mt-8 p-5 bg-slate-100 rounded-xl">
+                    <p class="text-sm font-mono text-slate-500">📜 “Where history and science meet — the invisible backbone of healthcare.”</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden border border-slate-100">
+                <img src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=800" class="h-64 w-full object-cover" alt="Old laboratory equipment">
+                <div class="p-5">
+                    <h3 class="font-bold">Vintage equipment & archival corner</h3>
+                    <p class="text-sm text-slate-500">The profession didn't always have AI — but dedication to accuracy remains unchanged.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stop 4: The Main Floor – Hospital Facilities (stations) -->
+    <section id="facilities" class="bg-slate-100 py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <div class="inline-block bg-teal-800 text-white px-3 py-1 rounded-full text-sm font-bold mb-3">STOP 4 • THE MAIN FLOOR</div>
+                <h2 class="text-4xl font-bold text-slate-800">Hospital Facilities: each station has a mission</h2>
+                <p class="text-slate-600 mt-2 max-w-2xl mx-auto">In advanced tertiary hospitals like St. Frances Cabrini Medical Center or Calamba Medical Center, the laboratory is divided into specialized zones.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md microscope-card transition">
+                    <div class="h-2 bg-red-500"></div>
+                    <div class="p-6"><span class="text-3xl">🩸</span><h3 class="text-xl font-bold mt-2">Hematology</h3><p class="text-slate-600 text-sm mt-1">Where we look at blood cells: detect anemia, infections, and clotting disorders.</p></div>
+                </div>
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md microscope-card transition">
+                    <div class="h-2 bg-blue-500"></div>
+                    <div class="p-6"><span class="text-3xl">⚗️</span><h3 class="text-xl font-bold mt-2">Clinical Chemistry</h3><p class="text-slate-600 text-sm">“The Chemical Plant”: glucose (diabetes), cholesterol (heart health), electrolytes.</p></div>
+                </div>
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md microscope-card transition">
+                    <div class="h-2 bg-green-600"></div>
+                    <div class="p-6"><span class="text-3xl">🦠</span><h3 class="text-xl font-bold mt-2">Microbiology</h3><p class="text-slate-600 text-sm">“The Hot Zone”: grow bacteria & determine which antibiotic will kill the infection.</p></div>
+                </div>
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md microscope-card transition">
+                    <div class="h-2 bg-amber-600"></div>
+                    <div class="p-6"><span class="text-3xl">🩸🧬</span><h3 class="text-xl font-bold mt-2">Blood Bank (Immunohematology)</h3><p class="text-slate-600 text-sm">High-pressure zone: cross-match blood for surgeries & emergencies. One mistake can be fatal.</p></div>
+                </div>
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md microscope-card transition">
+                    <div class="h-2 bg-purple-600"></div>
+                    <div class="p-6"><span class="text-3xl">🔬</span><h3 class="text-xl font-bold mt-2">Histopathology</h3><p class="text-slate-600 text-sm">Process tissue biopsies — tumor samples become slides for cancer diagnosis.</p></div>
+                </div>
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md microscope-card transition border border-teal-100">
+                    <div class="h-2 bg-teal-400"></div>
+                    <div class="p-6"><span class="text-3xl">🧪</span><h3 class="text-xl font-bold mt-2">Molecular Diagnostics</h3><p class="text-slate-600 text-sm">PCR & Sequencing: rapid detection of viruses like COVID-19, genetic markers.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stop 5: The Tech Hub – 2026 Innovations -->
+    <section id="innovation" class="py-20 px-6 max-w-7xl mx-auto border-b border-slate-200">
+        <div class="text-center mb-12">
+            <div class="inline-block bg-slate-800 text-white px-3 py-1 rounded-full text-sm font-bold mb-3">STOP 5 • TECH HUB 2026</div>
+            <h2 class="text-4xl font-bold">The future is already here: <span class="text-teal-700">AI & next‑gen tools</span></h2>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-gradient-to-br from-slate-900 to-slate-800 text-white p-6 rounded-2xl shadow-xl">
+                <div class="text-4xl mb-3">🧠📷</div>
+                <h3 class="text-2xl font-bold">AI-Integrated Microscopy</h3>
+                <p class="text-slate-300 mt-2">Artificial Intelligence scans thousands of cells in seconds, flagging only suspicious ones for the MedTech to review.</p>
+            </div>
+            <div class="bg-gradient-to-br from-teal-800 to-teal-900 text-white p-6 rounded-2xl shadow-xl">
+                <div class="text-4xl mb-3">📱💉</div>
+                <h3 class="text-2xl font-bold">Point-of-Care Testing (POCT)</h3>
+                <p class="text-teal-100 mt-2">Handheld devices perform a full blood panel at the patient’s bedside in minutes — real-time results.</p>
+            </div>
+            <div class="bg-gradient-to-br from-indigo-800 to-indigo-900 text-white p-6 rounded-2xl shadow-xl">
+                <div class="text-4xl mb-3">🧬⚡</div>
+                <h3 class="text-2xl font-bold">Molecular Diagnostics</h3>
+                <p class="text-indigo-100 mt-2">We look at bacterial DNA, rapidly detecting viruses & genetic cancer markers — precision medicine at scale.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Exit: Word to Future MedTechs + references -->
+    <section class="max-w-6xl mx-auto px-6 py-20">
+        <div class="bg-white rounded-3xl shadow-2xl overflow-hidden border border-slate-100">
+            <div class="md:flex">
+                <div class="md:w-1/3 bg-teal-700 p-8 text-white flex flex-col justify-center">
+                    <div class="text-6xl mb-4">🔬✨</div>
+                    <h3 class="text-2xl font-bold">The Exit</h3>
+                    <p class="text-teal-100 mt-2">A word to future MedTechs</p>
+                </div>
+                <div class="md:w-2/3 p-8 md:p-10">
+                    <p class="text-lg text-slate-700 leading-relaxed">You might not get the standing ovations that doctors receive, and you’ll often be working while the world sleeps. But remember this: <span class="font-bold text-teal-800">A doctor without a MedTech is just a person with a guess.</span> By choosing this path, you are choosing to be the foundation of truth in medicine. You are the one who turns a patient’s fear into a focused plan of action. If you love science, precision, and saving lives from behind the scenes, you’ve found your home.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- References & Resources -->
+        <div class="mt-16 bg-slate-100 p-8 rounded-2xl">
+            <h3 class="font-bold text-slate-800 text-xl mb-5 border-b border-slate-300 pb-2 flex items-center gap-2"><span class="text-teal-700">📚</span> References & Resources</h3>
+            <ul class="space-y-3 text-slate-700 list-disc pl-6 marker:text-teal-600">
+                <li>Bureau of Labor Statistics (2026): <em>Occupational Outlook: Medical and Clinical Laboratory Technologists</em> – citing a 7% projected growth in demand.</li>
+                <li>Professional Regulation Commission (PRC): <em>The Philippine Medical Technology Act of 1969 (RA 5527).</em></li>
+                <li>American Society for Clinical Pathology (ASCP): Global Lab Statistics and Diagnostic Impact Reports.</li>
+                <li>St. Frances Cabrini Medical Center: Official Laboratory Services and Diagnostic Capabilities Guide.</li>
+                <li>Journal of Medical Laboratory Science: <em>The Role of AI in Diagnostic Accuracy</em> (2025 Edition).</li>
+            </ul>
+            <div class="mt-8 text-sm text-slate-500 italic border-t pt-5">© 2026 Behind the Microscope — virtual tour for academic and professional advocacy. Created by future MedTech leaders.</div>
+        </div>
+    </section>
+
+    <!-- Footer with contact style inspired by main page -->
+    <footer class="bg-slate-900 text-white py-14 px-6 mt-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center text-center md:text-left">
+            <div>
+                <h2 class="text-2xl font-bold flex items-center justify-center md:justify-start gap-2"><span class="text-teal-400">🔬</span> Behind the Microscope</h2>
+                <p class="text-slate-400 mt-2">A Purposive Communication project spotlighting the unseen heroes of diagnostic science.</p>
+                <div class="flex flex-wrap justify-center md:justify-start gap-4 mt-4 text-sm">
+                    <span>Kenn Mathew Pesigan</span>
+                    <span>•</span>
+                    <span>Martin Lansang</span>
+                </div>
+            </div>
+            <div class="flex flex-col items-center md:items-end">
+                <p class="text-slate-400">Explore the lab, question myths, inspire the next generation.</p>
+                <a href="#" class="text-teal-300 font-bold hover:text-teal-200 transition mt-2">join the virtual tour →</a>
+            </div>
+        </div>
+        <div class="text-center pt-10 border-t border-slate-800 text-slate-500 text-sm mt-6">
+            &copy; 2026 Behind the Microscope | Inspired by the medical laboratory science advocacy
+        </div>
+    </footer>
+
+</body>
+</html>
